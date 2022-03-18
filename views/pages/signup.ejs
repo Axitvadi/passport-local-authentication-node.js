@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <%- include('../partials/head.ejs'); %>
+</head>
+
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center ">
+                    <h2 class="heading-section">Register </h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-5">
+                    <div class="wrap">
+                        <div class="img"
+                            style="background-image: url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg);">
+                        </div>
+                        <div class="login-wrap p-4 p-md-3">
+                            <div class="d-flex">
+                                <div class="w-100">
+                                    <h3 class="mb-2">Sign up</h3>
+                                </div>
+                                <div class="w-100">
+                                    <p class="social-media d-flex justify-content-end">
+                                        <a href="#"
+                                            class="social-icon d-flex align-items-center justify-content-center"><span
+                                                class="fa fa-facebook"></span></a>
+                                        <a href="#"
+                                            class="social-icon d-flex align-items-center justify-content-center"><span
+                                                class="fa fa-twitter"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <form action="/signup" class="signin-form" method="POST">
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" required name="username">
+                                    <label class="form-control-placeholder" for="username">Username</label>
+                                </div>
+                                <div class="form-group">
+                                    <input id="email-field" type="email" class="form-control" name="email" required>
+                                    <label class="form-control-placeholder" for="email">email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input id="password-field" type="password" class="form-control" name="password"
+                                        required>
+                                    <label class="form-control-placeholder" for="password">Password</label>
+                                    <span toggle="#password-field"
+                                        class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </div>
+                                <div class="form-group signup">
+                                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign
+                                        up</button>
+                                </div>
+                                <div class="form-group  d-md-flex">
+                                    <div class="form-group  mx-auto">
+                                        <p class="signup">already register sign in</p>
+                                        <a class="form-control btn btn-primary rounded submit px-3" href="/login">Sign
+                                            in</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>
